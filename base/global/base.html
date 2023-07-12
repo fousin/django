@@ -1,18 +1,26 @@
-{% load static %}<!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="{% static 'home/css/blue.css' %}">
-    
-    <link rel="stylesheet" href="{% static 'global/css/red.css' %}">
+    <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
 </head>
 <body>
     
     {% include 'global/partials/menu.html' %}
-
-    <h1>{% block texto %} sadsadsa {% endblock texto %} </h1>
+    <h1>{% block texto %} {% endblock texto %} </h1>
     
+    
+<main class="content">
+    
+    <h1>{% block posts %} {% endblock posts %} </h1>
+
+</main>
+
+    
+
+
 </body>
 </html>
